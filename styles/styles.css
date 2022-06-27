@@ -2,22 +2,32 @@
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
-  src: url(..fonts/ptsans-400.woff2) format("woff2");
+  src: url(../fonts/ptsans-400.woff2) format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  src: url(..fonts/ptsans-700) format("woff2");
+  src: url(../fonts/ptsans-700.woff2) format("woff2");
   font-display: swap;
 }
 body{
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  min-height: 100%;
   font-family: 'PT Sans', sans-serif;
-}
+  position: relative;
+  width: 1280px;
+  height: 3315px;
 
+
+  background: #F2F2F2;
+}
+.main-container{
+  flex-grow: 1;
+}
 
 .index-background{
   position: absolute;
@@ -30,12 +40,50 @@ body{
   width: 1200px;
 }
 .field-background{
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 1000px;
   background: url(../images/another-images-folder/background.png);
   height: 411px;
   width: 1200px;
+}
+html{
+  height: 100%;
+}
+.welcome{
+  position: absolute;
+  left: 30.92%;
+  right: 30.92%;
+  top: 6.65%;
+  bottom: 47.46%;
+}
+.logo{
+  position: absolute;
+  width: 139px;
+  height: 70px;
+  left: 70px;
+  top: 0;
+}
+.menu{
+  position: absolute;
+  left: 19.92%;
+  right: 47.58%;
+  top: 0%;
+  bottom: 5.71%;
+}
+.search{
+  position: absolute;
+  width: 18.05px;
+  height: 18.1px;
+  left: calc(50% - 18.05px/2 + 0px);
+  top: calc(50% - 18.1px/2 - 0.5px);
+}
+.fav{
+  position: absolute;
+  width: 18.05px;
+  height: 17px;
+  left: calc(50% - 18.05px/2 - 0.46px);
+  top: calc(50% - 17px/2 - 0.5px);
 }
