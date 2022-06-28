@@ -2,40 +2,236 @@
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
-  src: url(..fonts/ptsans-400.woff2) format("woff2");
+  src: url(../fonts/ptsans-400.woff2) format("woff2");
   font-display: swap;
 }
+
 @font-face {
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  src: url(..fonts/ptsans-700) format("woff2");
+  src: url(../fonts/ptsans-700.woff2) format("woff2");
   font-display: swap;
 }
-body{
+
+body {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  min-height: 100%;
   font-family: 'PT Sans', sans-serif;
+
+
+  background: #F2F2F2;
 }
 
+.main-container {
+  flex-grow: 1;
+}
 
-.index-background{
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 36.77%;
-  background: url(../images/another-images-folder/index-background.png);
-  height: 485px;
+.main-index {
+  background-color: #ffffff;
+  background-image: url(../images/another-images-folder/index-background.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+html {
+  height: 100%;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.welcome {
+  display: block;
+  padding: 371px;
+  padding-top: 51px;
+  padding-bottom: 82px;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  width: 139px;
+  height: 70px;
+  padding-left: 70px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px 17px;
+  gap: 34px;
+}
+
+.search {
+  display: flex;
+  width: 18.05px;
+  height: 18.1px;
+  margin-left: -23.49px;
+}
+
+.fav {
+  display: flex;
+  padding-right: 47.3;
+  width: 18.05px;
+  height: 17px;
+}
+
+.navigation {
+  display: flex;
   width: 1200px;
+  margin: 0 auto;
 }
-.field-background{
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
-  background: url(../images/another-images-folder/background.png);
+
+.navigation-list {
+  max-width: 390px;
+  margin-left: 239px;
+  padding-top: 0;
+}
+
+.user-menu {
+  display: flex;
+  margin-left: 866.13px;
+  margin-right: 70px;
+  width: 263.87px;
+  height: 66px;
+}
+
+.field-index {
+  background-image: url(../images/another-images-folder/background.png);
+  background-position: center;
   height: 411px;
   width: 1200px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.logo {
+  display: block;
+  margin-left: 70px;
+  margin-right: 47px;
+  width: 139px;
+  height: 70px;
+}
+
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #000000;
+  list-style-type: none;
+}
+
+.advantages-item {
+  background-color: #82B3D3;
+  width: 400px;
+  height: 200px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  padding: 92px 85px;
+  justify-content: center;
+}
+
+.advantages-item-second {
+  background-color: rgba(131, 179, 211, 0.12);
+  width: 400px;
+  height: 200px;
+  text-align: center;
+  display: flex;
+  padding-left: 85px;
+  padding-right: 85px;
+  padding-top: 80px;
+  padding-bottom: 81px;
+  justify-content: center;
+
+}
+
+.advantages-item-third {
+  background-color: rgba(131, 179, 211, 0.2);
+  width: 400px;
+  height: 200px;
+  text-align: center;
+  display: flex;
+  padding-left: 85px;
+  padding-right: 85px;
+  padding-top: 80px;
+  padding-bottom: 81px;
+  justify-content: center;
+
+
+}
+
+.advantages-item-forth {
+  background-color: rgb(255, 255, 255);
+  width: 400px;
+  height: 200px;
+  text-align: center;
+  display: flex;
+  padding: 92px 85px;
+  justify-content: center;
+
+}
+
+
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  color: #242424;
+  background-color: #fbf7f4;
+}
+
+.contact-list {
+  display: inline;
+
+}
+
+.about-sedona {
+  display: flex;
+  padding-left: 290px;
+  padding-right: 290px;
+  padding-top: 166px;
+  justify-content: center;
+}
+
+.five-rule {
+  display: flex;
+  padding-left: 273px;
+  padding-right: 273px;
+  padding-bottom: 90px;
+  justify-content: center;
+}
+
+.photo-1 {
+  display: flex;
+  width: 800px;
+  height: 384px;
+  background-image: url(../images/another-images-folder/photo-1.png);
+  background-repeat: no-repeat;
+
+}
+
+.photo-2 {
+  display: flex;
+  justify-content: center;
+  width: 800px;
+  height: 384px;
+  background-image: url(../images/another-images-folder/photo-2.png);
+  background-repeat: no-repeat;
+}
+
+header {
+  display: flex;
+  background-color: #ffffff;
+  padding-top: 20px;
+}
+footer{
+  background-color: #ffffff;
+}
+li{
+  list-style-type: none;
 }
