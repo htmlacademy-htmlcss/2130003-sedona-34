@@ -51,26 +51,22 @@ html {
 }
 
 .logo {
-  position: absolute;
+  display: flex;
   width: 139px;
   height: 70px;
-  left: 70px;
-  top: 0;
+  padding-left: 70px;
 }
 
 .menu {
-  position: absolute;
-  left: 19.92%;
-  right: 47.58%;
-  top: 0%;
-  bottom: 5.71%;
-  width: 390px;
-  height: 66px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px 17px;
+  gap: 34px;
 }
 
 .search {
   display: flex;
-  position: absolute;
   width: 18.05px;
   height: 18.1px;
   margin-left: -23.49px;
@@ -133,30 +129,51 @@ html {
 .advantages-item {
   background-color: #82B3D3;
   width: 400px;
-  height: 384px;
-  text-align: center;
-  color: rgb(255, 255, 255);;
+  height: 200px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  padding: 92px 85px;
+  justify-content: center;
 }
 
 .advantages-item-second {
   background-color: rgba(131, 179, 211, 0.12);
   width: 400px;
-  height: 384px;
+  height: 200px;
   text-align: center;
+  display: flex;
+  padding-left: 85px;
+  padding-right: 85px;
+  padding-top: 80px;
+  padding-bottom: 81px;
+  justify-content: center;
+
 }
 
 .advantages-item-third {
   background-color: rgba(131, 179, 211, 0.2);
   width: 400px;
-  height: 384px;
+  height: 200px;
   text-align: center;
+  display: flex;
+  padding-left: 85px;
+  padding-right: 85px;
+  padding-top: 80px;
+  padding-bottom: 81px;
+  justify-content: center;
+
+
 }
 
 .advantages-item-forth {
   background-color: rgb(255, 255, 255);
   width: 400px;
-  height: 384px;
+  height: 200px;
   text-align: center;
+  display: flex;
+  padding: 92px 85px;
+  justify-content: center;
+
 }
 
 
@@ -195,10 +212,12 @@ html {
   height: 384px;
   background-image: url(../images/another-images-folder/photo-1.png);
   background-repeat: no-repeat;
+
 }
 
 .photo-2 {
   display: flex;
+  justify-content: center;
   width: 800px;
   height: 384px;
   background-image: url(../images/another-images-folder/photo-2.png);
