@@ -68,15 +68,15 @@ html {
 
 .search {
   display: flex;
-  width: 18.05px;
-  height: 18.1px;
-  margin-left: -23.49px;
+  width: 18px;
+  height: 18px;
+  margin-right: 23.49px;
 }
 
 .fav {
   display: flex;
-  padding-right: 47.3;
-  width: 18.05px;
+  padding-right: 47;
+  width: 18px;
   height: 17px;
 }
 
