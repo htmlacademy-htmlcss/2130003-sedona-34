@@ -16,9 +16,7 @@
 
 body {
   display: flex;
-  margin: 0 auto;
   flex-direction: column;
-  min-height: 100%;
   font-family: 'PT Sans', sans-serif;
   max-width: 1200px;
 
@@ -39,8 +37,6 @@ body {
 
 html {
   height: 100%;
-  margin-left: 40px;
-  margin-right: 40px;
 }
 
 .welcome {
@@ -111,10 +107,11 @@ html {
 
 .logo {
   display: block;
-  margin-left: 70px;
-  margin-right: 47px;
-  width: 139px;
-  height: 70px;
+  position: absolute;
+  left: 5.83%;
+  right: 82.58%;
+  top: 0%;
+  bottom: 0%;
 }
 
 .advantages-list {
@@ -181,14 +178,8 @@ html {
 .index-columns {
   display: flex;
   justify-content: space-between;
-  padding: 0 40px;
   color: #242424;
   background-color: #fbf7f4;
-}
-
-.contact-list {
-  display: inline;
-
 }
 
 .about-sedona {
@@ -211,24 +202,24 @@ html {
   display: flex;
   width: 800px;
   height: 384px;
-  background-image: url(../images/another-images-folder/photo-1.png);
-  background-repeat: no-repeat;
 
 }
 
 .photo-2 {
   display: flex;
-  justify-content: center;
   width: 800px;
   height: 384px;
-  background-image: url(../images/another-images-folder/photo-2.png);
-  background-repeat: no-repeat;
 }
 
 header {
   display: flex;
   background-color: #ffffff;
   padding-top: 20px;
+  position: absolute;
+  height: 70px;
+  left: 40px;
+  right: 40px;
+  top: 0;
 }
 footer{
   background-color: #ffffff;
@@ -246,4 +237,76 @@ li{
   align-items: flex-start;
   padding: 35px 70px 70px;
   gap: 10px;
+}
+.nav-link {
+  position: relative;
+  display: block;
+  padding: 24px 19px;
+  font-family: "PT Sans", sans-serif;
+  line-height: 22px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.button-basic{
+  background: #756157;
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+}
+.button-basic:hover{
+  background: #615048;
+  border-radius: 4px;
+}
+.button-basic:focus{
+  background: #615048;
+  border-radius: 4px;
+}
+.button-basic:active{
+  background: #756157;
+  color: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+a{
+  text-decoration: none;
+}
+.button-second{
+  color: rgb(255, 255, 255);
+  background: #82B3D3;
+  border-radius: 4px;
+}
+.button-second:hover{
+  background: #68A2CA;;
+  border-radius: 4px;
+}
+.button-second:focus{
+  background: #68A2CA;;
+  border-radius: 4px;
+}
+.button-second:hover{
+  background: #68A2CA;;
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.3);
+}
+.social{
+  background: #83B3D3;
+  width: 22px;
+  height: 17px;
+}
+.social:hover{
+  background: #68A2CA;
+  width: 22px;
+  height: 17px;
+}
+.social:focus{
+  background: #68A2CA;
+  width: 22px;
+  height: 17px;
+}
+.social:active{
+  background: rgba(104, 162, 202, 0.3);
+  width: 22px;
+  height: 17px;
 }
