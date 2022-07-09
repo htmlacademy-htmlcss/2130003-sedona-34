@@ -255,6 +255,7 @@ li{
   background: #756157;
   color: rgb(255, 255, 255);
   border-radius: 4px;
+  border-color: #756157;
 }
 .button-basic:hover{
   background: #615048;
@@ -276,6 +277,7 @@ a{
   color: rgb(255, 255, 255);
   background: #82B3D3;
   border-radius: 4px;
+  border-color: #68A2CA;
 }
 .button-second:hover{
   background: #68A2CA;;
@@ -309,4 +311,100 @@ a{
   background: rgba(104, 162, 202, 0.3);
   width: 22px;
   height: 17px;
+}
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 40px;
+  background-color: #ffffff;
+}
+.modal-auth {
+  width: 360px;
+}
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 0;
+  right: 0;
+  width: 56px;
+  height: 44px;
+  background-color: #ffffff;
+  border: none;
+  background-image: url("../images/svg-folder/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+.modal-title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 32px;
+  line-height: 35px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+.find-form .field-group {
+  margin: 0;
+  margin-bottom: 16px;
+}
+.date-1{
+  width: 420px;
+  height: 50px;
+}
+.date-2{
+  width: 420px;
+  height: 50px;
+}
+.grown{
+  width: 133px;
+  height: 50px;
+}
+.kids{
+  width: 133px;
+  height: 50px;
+}
+.button-second-special{
+  color: rgb(255, 255, 255);
+  background: #82B3D3;
+  border-radius: 10px;
+  width: 575px;
+  height: 60px;
+  border-color: #68A2CA;
+}
+.button-second-special:hover{
+  background: #68A2CA;;
+  border-radius: 10px;
+}
+.button-second-special:focus{
+  background: #68A2CA;;
+  border-radius: 10px;
+}
+.button-second-special:active{
+  background: #68A2CA;;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.3);
+}
+.modal-label{
+  font-weight: 700;
+}
+.field{
+  border-radius: 4px;
+  background: #F2F2F2;
+  border-color: #F2F2F2;
+}
+.basic-white{
+  background: #FFFFFF;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
 }
