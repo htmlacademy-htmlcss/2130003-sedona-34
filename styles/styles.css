@@ -18,10 +18,10 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'PT Sans', sans-serif;
-  max-width: 1200px;
+  width: 1200px;
 
 
-  background: #F2F2F2;
+  background-color: #ffffff;
 }
 
 .main-container {
@@ -36,7 +36,22 @@ body {
 }
 
 html {
+  display: flex;
   height: 100%;
+  background: #F2F2F2;
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  display: flex;
+  position: relative;
+  height: 70px;
+  left: 40px;
+  right: 40px;
+  top: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .welcome {
@@ -64,21 +79,26 @@ html {
 
 .search {
   display: flex;
+  position: absolute;
   width: 18px;
   height: 18px;
-  margin-right: 23.49px;
+  margin-right: 24px;
+  left: calc(50% - 18.05px/2 - 0.46px);
+  top: calc(50% - 17px/2 - 0.5px);
+
 }
 
 .fav {
   display: flex;
-  padding-right: 47px;
   width: 18px;
   height: 17px;
+  position: absolute;
+  left: calc(50% - 18.05px/2 - 0.46px);
+  top: calc(50% - 17px/2 - 0.5px);
 }
 
 .nav {
   display: flex;
-  width: 1200px;
   margin: 0 auto;
 }
 
@@ -94,6 +114,11 @@ html {
   margin-right: 70px;
   width: 263.87px;
   height: 66px;
+  position: absolute;
+  left: 72.18%;
+  right: 5.83%;
+  top: 0;
+  bottom: 5.71%;
 }
 
 .field-index {
@@ -127,11 +152,11 @@ html {
 .advantages-item {
   background-color: #82B3D3;
   width: 400px;
-  height: 200px;
+  height: 384px;
   color: rgb(255, 255, 255);
   display: flex;
-  padding: 92px 85px;
   justify-content: center;
+  font-weight: 700;
 }
 
 .advantages-item-second {
@@ -145,7 +170,7 @@ html {
   padding-top: 80px;
   padding-bottom: 81px;
   justify-content: center;
-
+  font-weight: 700;
 }
 
 .advantages-item-third {
@@ -159,8 +184,7 @@ html {
   padding-top: 80px;
   padding-bottom: 81px;
   justify-content: center;
-
-
+  font-weight: 700;
 }
 
 .advantages-item-forth {
@@ -169,9 +193,9 @@ html {
   height: 200px;
   text-align: center;
   display: flex;
-  padding: 92px 85px;
+  padding: 90px 85px;
   justify-content: center;
-
+  font-weight: 700;
 }
 
 
@@ -199,10 +223,13 @@ html {
 }
 
 .photo-1 {
-  display: flex;
   width: 800px;
   height: 384px;
-
+  position: relative;
+  left: 33.33%;
+  right: 0%;
+  top: 0%;
+  bottom: 74.98%;
 }
 
 .photo-2 {
@@ -212,14 +239,7 @@ html {
 }
 
 header {
-  display: flex;
   background-color: #ffffff;
-  padding-top: 20px;
-  position: absolute;
-  height: 70px;
-  left: 40px;
-  right: 40px;
-  top: 0;
 }
 footer{
   background-color: #ffffff;
@@ -272,12 +292,13 @@ li{
 }
 a{
   text-decoration: none;
+  color: #000000;
 }
 .button-second{
   color: rgb(255, 255, 255);
   background: #82B3D3;
   border-radius: 4px;
-  border-color: #68A2CA;
+  border-color: #82B3D3;
 }
 .button-second:hover{
   background: #68A2CA;;
@@ -287,7 +308,7 @@ a{
   background: #68A2CA;;
   border-radius: 4px;
 }
-.button-second:hover{
+.button-second:active{
   background: #68A2CA;;
   border-radius: 4px;
   color: rgba(255, 255, 255, 0.3);
@@ -407,4 +428,18 @@ a{
   background: #FFFFFF;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
+}
+.filter{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 35px 70px 70px;
+  gap: 10px;
+  color: #ffffff;
+
+  width: 1199.53px;
+  height: 403px;
+
+  background: url(../images/another-images-folder/background.png);
+  background-repeat: no-repeat;
 }

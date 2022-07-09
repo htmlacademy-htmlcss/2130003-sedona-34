@@ -9,7 +9,7 @@
 
   <body>
     <header>
-      <nav>
+      <nav class="nav-list">
         <svg width="139" height="70" viewBox="0 0 139 70" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo">
           <path d="M139 0H0L59.9312 65.6531C65.1688 71.449 73.8312 71.449 79.0688 65.6531L139 0Z" fill="#81B3D3" />
           <path d="M36.804 0.49745L68.9951 38.2042L101.086 0.696431L36.804 0.49745Z" fill="#23A9E1" />
@@ -34,9 +34,9 @@
             fill="white" />
         </svg>
         <div class="menu">
-          <a href="index.html">Главная</a>
-          <a href="index.html">О Седоне</a>
-          <a title="Вы уже смотрите список гостиниц">Гостиницы</a>
+          <a href="#main">Главная</a>
+          <a href="#about">О Седоне</a>
+          <a href="catalog.html">Гостиницы</a>
         </div>
         <div class="user-menu">
           <a href="#"><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +53,7 @@
                 fill="black" />
             </svg>
           </a>
-          <a href="catalog.html">ХОЧУ СЮДА</a>
+          <button class="button-basic">ХОЧУ СЮДА</button>
         </div>
       </nav>
     </header>
@@ -63,31 +63,29 @@
         <form action="https://echo.htmlacademy.ru/courses" method="post">
           <h2>Инфраструктура</h2>
           <label>Бассейн
-            <input type="checkbox" name="if-pool">
+            <input type="checkbox" name="if-pool"><br>
           </label>
           <label>Парковка
-            <input type="checkbox" name="if-park">
+            <input type="checkbox" name="if-park"><br>
           </label>
           <label>Wi-Fi
             <input type="checkbox" name="if-wifi">
           </label>
           <h2>Тип жилья</h2>
           <label>Гостиница
-            <input type="radio" name="type-of-place" value="hotel">
+            <input type="radio" name="type-of-place" value="hotel"><br>
           </label>
           <label>Мотель
-            <input type="radio" name="type-of-place" value="motel">
+            <input type="radio" name="type-of-place" value="motel"><br>
           </label>
           <label>Апартаменты
             <input type="radio" name="type-of-place" value="apartments">
           </label>
           <label>Стоимость
             <input type="text" name="price-ot">
-          </label>
-          <label>Стоимость
             <input type="text" name="price-do">
           </label>
-          <input type="submit" name="ПРИМЕНИТЬ">
+          <input type="submit" name="ПРИМЕНИТЬ" value="ПРИМЕНИТЬ" class="button-second">
         </form>
       </div>
     <h3>НАЙДЕНО ГОСТИНИЦ:38</h3>
@@ -186,6 +184,34 @@
       +7(812)812-12-12
       <a href="https://htmlacademy.ru/"><img src="images/another-images-folder/html-Academy.png" alt="html-academy"></a>
     </footer>
+    <div class="modal-container visually-hidden">
+      <div class="modal modal-finder basic-white">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
+          <form class="find-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group">
+              <label for="date-1" class="modal-label">Дата Заезда</label>
+              <input class="date-1 field" type="text" id="date-1" name="date-1" placeholder="Дата заезда" required>
+            </p>
+            <p class="field-group">
+              <label for="date-2" class="modal-label">Дата Выезда</label>
+              <input class="date-2 field" type="text" id="date-2" name="date-2" placeholder="Дата выезда" required>
+            </p>
+            <p>
+              <label for="grown" class="modal-label">Взрослые</label>
+              <input class="field" type="text" id="grown" name="grown" placeholder="Взрослые" required>
+              <label for="kids" class="modal-label">Дети</label>
+              <input class="field" type="text" id="kids" name="kids" placeholder="Дети">
+            </p><br>
+            <button class="button-second-special" type="submit">НАЙТИ</button>
+          </form>
+        </section>
+      </div>
+    </div>
+
   </body>
 
 </html>
