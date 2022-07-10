@@ -433,13 +433,22 @@ a{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 35px 70px 70px;
   gap: 10px;
   color: #ffffff;
 
-  width: 1199.53px;
+  width: 1200px;
   height: 403px;
 
   background: url(../images/another-images-folder/background.png);
   background-repeat: no-repeat;
+}
+.auto-layout{
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  justify-content: space-between;
+  color: #242424;
+
+
+  background: #FFFFFF;
 }
