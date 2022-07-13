@@ -20,12 +20,15 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  min-height: 100%;
   font-family: "PT Sans", Arial, sans-serif;
   color: #333;
   text-transform: uppercase;
   background-color: #ffffff;
   -webkit-font-kerning: none;
-  font-kerning: none
+  font-kerning: none;
+  display: grid;
+  grid-template-rows: 1fr auto;
 }
 
 .main-container {
@@ -106,7 +109,7 @@ header {
 }
 
 .user-menu {
-  display: flex;
+  display: inline-flex;
   margin-left: 300px;
   width: 263.87px;
   height: 66px;
@@ -894,7 +897,7 @@ a.current {
 .filters {
   color: #fff;
   background-color: #5785ad;
-  background-image: url(../images/another-images-folder/background.png);
+  background-image: url(../images/another-images-folder/catalog-background\ 1.png);
   background-position: 0 -55px;
   background-size: 1200px 400px;
 }
@@ -1139,15 +1142,15 @@ a.current {
 }
 
 .home-pic::before {
-  background-image: url(../img/icon-1.png)
+  background-image: url(../images/svg-folder/home-icon.svg)
 }
 
 .food-pic::before {
-  background-image: url(../img/icon-2.png)
+  background-image: url(../images/svg-folder/food-icon.svg)
 }
 
 .souvenir-pic::before {
-  background-image: url(../img/icon-3.png)
+  background-image: url(../images/svg-folder/present-icon.svg)
 }
 
 .features-title {
@@ -1749,4 +1752,81 @@ a.current {
 }
 .e2e2{
   background-color: #ffffff;
+}
+.reset-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 70px 30px;
+}
+
+.footer-contacts-phone {
+  display: block;
+  text-align: center;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #000000;
+  background-color: var(--background-color);
+}
+
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 47px;
+  height: 40px;
+}
+
+.footer-contacts-phone {
+  width: 720px;
+}
+
+.footer-contacts-phone:hover {
+  color: #756157;
+}
+
+.footer-contacts-phone:focus {
+  color: #756157;
+}
+
+.footer-contacts-phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.footer-logo {
+  padding-bottom: 8px;
+  width: 115px;
+}
+
+.html-logo {
+  fill: #000000;
+}
+
+.html-logo:hover {
+  fill: #756157;
+}
+
+.html-logo:focus {
+  fill: #756157;
+}
+
+.html-logo:active {
+  fill: rgba(117, 97, 87, 0.3);
+}
+.pagination{
+  display: inline;
+  background: #ffffff;
 }
