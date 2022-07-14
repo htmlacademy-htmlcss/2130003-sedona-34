@@ -59,6 +59,7 @@ header {
   top: 0;
   margin: 0;
   padding: 0;
+  font-weight: 700;
 }
 
 
@@ -77,26 +78,6 @@ header {
   gap: 34px;
 }
 
-.search {
-  display: flex;
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  margin-right: 24px;
-  left: calc(50% - 18.05px/2 - 0.46px);
-  top: calc(50% - 17px/2 - 0.5px);
-
-}
-
-.fav {
-  display: flex;
-  width: 18px;
-  height: 17px;
-  position: relative;
-  left: calc(50% - 18.05px/2 - 0.46px);
-  top: calc(50% - 17px/2 - 0.5px);
-}
-
 .nav {
   display: flex;
   margin: 0 auto;
@@ -109,15 +90,12 @@ header {
 }
 
 .user-menu {
-  display: inline-flex;
-  margin-left: 300px;
-  width: 263.87px;
-  height: 66px;
-  position: relative;
-  left: 72.18%;
-  right: 5.83%;
-  top: 0;
-  bottom: 5.71%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 20px 17px;
+  gap: 34px;
 
 }
 
@@ -281,6 +259,7 @@ li {
   color: rgb(255, 255, 255);
   border-radius: 4px;
   border-color: #756157;
+  font-weight: 700;
 }
 
 .button-basic:hover {
@@ -309,6 +288,7 @@ a {
   background: #82B3D3;
   border-radius: 4px;
   border-color: #82B3D3;
+  font-weight: 700;
 }
 
 .button-second:hover {
@@ -433,6 +413,7 @@ a {
   width: 575px;
   height: 60px;
   border-color: #68A2CA;
+  font-weight: 700;
 }
 
 .button-second-special:hover {
@@ -762,7 +743,7 @@ a.current {
 
 .card-title,
 .features-title {
-  font-size: 21px;
+  font-size: 24px;
   line-height: 21px;
   color: #000
 }
@@ -1829,4 +1810,10 @@ a.current {
 .pagination{
   display: inline;
   background: #ffffff;
+}
+.selected{
+  background: #7DB54F;
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-weight: 700;
 }
